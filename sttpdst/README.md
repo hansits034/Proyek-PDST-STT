@@ -6,8 +6,8 @@
 ## 👥 Daftar Anggota
 | No | Nama Anggota       | NRP         |
 |----|--------------------|-------------|
-| 1  | [Hans Sanjaya Yantono]   | [5025231034] |
-| 2  | [Dustin Felix]   | [5025231046] |
+| 1  | Hans Sanjaya Yantono   | 5025231034 |
+| 2  | Dustin Felix   | 5025231046 |
 
 ---
 
@@ -19,7 +19,7 @@ Setiap minggu mencakup ringkasan pekerjaan, kendala, dan rencana tindak lanjut.
 
 ---
 
-## 🗓️ Minggu 1 (Tanggal: 26 September – 02 Oktober 2025)
+## 🗓️ Minggu 1, Pertemuan 6 (Tanggal: 26 September – 02 Oktober 2025)
 ### ✅ Pekerjaan yang Selesai
 - Set Up Environtment Flutter. (Menggunakan Android)
 - Pembuatan tampilan sederhana dengan voice recording sederhana. [Dustin]
@@ -39,7 +39,7 @@ Video: https://drive.google.com/file/d/1-Vq-0RmV0uKH6lTE-_EyRaKOpBV9nnYr/view?us
 
 ---
 
-## 🗓️ Minggu 2 (Tanggal: 03–09 Okt 2025)
+## 🗓️ Minggu 2, pertemuan 7 (Tanggal: 03–09 Okt 2025)
 ### ✅ Pekerjaan yang Selesai
 - 
 
