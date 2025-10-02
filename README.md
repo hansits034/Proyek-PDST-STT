@@ -8,6 +8,7 @@
 | 2  | Dustin Felix   | 5025231046 |
 | 3  | Arkananta Masarief   | 5025231115 |
 | 4  | Dzaky Rantisi Salim   | 5025231271 |
+| 5  | Jamaluddin   | 5025221157 |
 
 ---
 
