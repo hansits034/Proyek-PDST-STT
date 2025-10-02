@@ -1,5 +1,6 @@
 # Proyek-PDST
 ## Proyek: Pengembangan Mobile App Text-To-Speech AI
+![WhatsApp Image 2025-09-25 at 18 17 51_0f75e224](https://github.com/user-attachments/assets/be0ea1fe-fcc0-470e-8f5c-bd014ffeff4b)
 
 ## 👥 Daftar Anggota
 | No | Nama Anggota       | NRP         |
