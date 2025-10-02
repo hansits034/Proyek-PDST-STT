@@ -4,11 +4,12 @@
 ## 👥 Daftar Anggota
 | No | Nama Anggota       | NRP         |
 |----|--------------------|-------------|
-| 1  | Hans Sanjaya Yantono   | 5025231034 |
-| 2  | Dustin Felix   | 5025231046 |
-| 3  | Arkananta Masarief   | 5025231115 |
-| 4  | Dzaky Rantisi Salim   | 5025231271 |
-| 5  | Jamaluddin   | 5025221157 |
+| 1  | Jamaluddin   | 5025221157 |
+| 2  | Hans Sanjaya Yantono   | 5025231034 |
+| 3  | Dustin Felix   | 5025231046 |
+| 4  | Arkananta Masarief   | 5025231115 |
+| 5  | Dzaky Rantisi Salim   | 5025231271 |
+
 
 ---
 
