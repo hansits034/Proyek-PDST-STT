@@ -22,13 +22,13 @@ Setiap minggu mencakup ringkasan pekerjaan, kendala, dan rencana tindak lanjut.
 ## 🗓️ Minggu 1, Pertemuan 6 (Tanggal: 26 September – 02 Oktober 2025)
 ### ✅ Pekerjaan yang Selesai
 - Set Up Environtment Flutter. (Menggunakan Android)
-- Pembuatan tampilan sederhana dengan voice recording sederhana. [Dustin]
-- Pembuatan Backend API dasar. [Hans]
+- Pembuatan tampilan sederhana dengan voice recording sederhana (pada file 'sttpdst'). [Dustin]
+- Pembuatan Backend API dasar (pada file 'sttpdst'). [Hans]
 - Pencarian Dataset serta menentukan model yang dipilih untuk text to speech [Arka & Dzaky]
 
 <img width="1188" height="1273" alt="Screenshot 2025-10-02 102928" src="https://github.com/user-attachments/assets/cdf3f3a0-4e5e-40fd-b67e-44d5af3b89e1" />
 
-Video Demo: https://drive.google.com/file/d/1-Vq-0RmV0uKH6lTE-_EyRaKOpBV9nnYr/view?usp=sharing
+Video Demo 'sttpdst': https://drive.google.com/file/d/1-Vq-0RmV0uKH6lTE-_EyRaKOpBV9nnYr/view?usp=sharing
 
 Link colab: https://colab.research.google.com/drive/1WYVlpPnUyKnk15tvuc6nM61TG8Q_sM1r?usp=sharing
 
