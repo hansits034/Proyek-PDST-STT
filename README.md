@@ -39,6 +39,7 @@ Link colab: https://colab.research.google.com/drive/1WYVlpPnUyKnk15tvuc6nM61TG8Q
 - Untuk training model masih memerlukan GPU dalam google colab sehingga belum bisa di train.
 
 ### 🎯 Rencana Minggu Depan
+- Pengembangan FrontEnd
 - Integrasi ASR
 - diarization pipeline.
 - Training model.
