@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:record/record.dart'; // Untuk merekam audio
-import 'package:just_audio/just_audio.dart'; // Untuk memutar audio
-import 'package:path_provider/path_provider.dart'; // Untuk manajemen path file
+import 'package:record/record.dart'; 
+import 'package:just_audio/just_audio.dart'; 
+import 'package:path_provider/path_provider.dart'; 
 import 'package:http/http.dart' as http;
 import 'dart:async';
 
@@ -49,7 +49,6 @@ class _AudioRecorderScreenState extends State<AudioRecorderScreen> {
     _audioRecorder = AudioRecorder();
     _audioPlayer = AudioPlayer();
 
-    // Listener untuk deteksi audio selesai diputar
     _audioPlayer.playerStateStream.listen((state) {
       if (state.processingState == ProcessingState.completed) {
         setState(() {}); 
@@ -64,7 +63,6 @@ class _AudioRecorderScreenState extends State<AudioRecorderScreen> {
     super.dispose();
   }
 
-  /// Mulai rekaman
   Future<void> _startRecording() async {
     try {
       if (await _audioRecorder.hasPermission()) {
@@ -87,7 +85,6 @@ class _AudioRecorderScreenState extends State<AudioRecorderScreen> {
     }
   }
 
-  /// Hentikan rekaman
   Future<void> _stopRecording() async {
     try {
       final path = await _audioRecorder.stop();
@@ -96,7 +93,6 @@ class _AudioRecorderScreenState extends State<AudioRecorderScreen> {
         _audioPath = path;
       });
 
-      // langsung upload setelah stop
       if (path != null) {
         await uploadFile(path);
       }
@@ -105,7 +101,6 @@ class _AudioRecorderScreenState extends State<AudioRecorderScreen> {
     }
   }
 
-  /// Upload file ke backend FastAPI
   Future<void> uploadFile(String filePath) async {
     try {
       var uri = Uri.parse("http://10.0.2.2:8000/upload"); 
@@ -124,7 +119,6 @@ class _AudioRecorderScreenState extends State<AudioRecorderScreen> {
     }
   }
 
-  /// Putar audio
   Future<void> _playAudio() async {
     if (_audioPath != null) {
       try {
@@ -136,7 +130,6 @@ class _AudioRecorderScreenState extends State<AudioRecorderScreen> {
     }
   }
 
-  /// Hentikan audio
   Future<void> _stopAudio() async {
     try {
       await _audioPlayer.stop();
@@ -197,7 +190,6 @@ class _AudioRecorderScreenState extends State<AudioRecorderScreen> {
     );
   }
 
-  /// Tombol UI
   Widget _buildStartRecordButton() {
     return ElevatedButton.icon(
       onPressed: _startRecording,
