@@ -84,3 +84,13 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+
+## Run Aplikasi
+1. Open terminal from sttpdst root <br> `cd backend`
+2. Open env <br>
+`python -m venv env`<br>
+`.\env\Scripts\activate`<br>
+`pip install fastapi "uvicorn[standard]" python-multipart faster-whisper webrtcvad`
+4. Di backend <br> `uvicorn main:app --host 0.0.0.0 --port 8000`
+5. run android emulator
+6. Di folder from sttpdst root <br> `flutter run`
