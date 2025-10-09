@@ -85,12 +85,42 @@ For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
 
-## Run Aplikasi
-1. Open terminal from sttpdst root <br> `cd backend`
-2. Open env <br>
-`python -m venv env`<br>
-`.\env\Scripts\activate`<br>
-`pip install fastapi "uvicorn[standard]" python-multipart faster-whisper webrtcvad`
-4. Di backend <br> `uvicorn main:app --host 0.0.0.0 --port 8000`
-5. run android emulator
-6. Di folder from sttpdst root <br> `flutter run`
+
+
+### 1. Backend Setup
+1.  **Buka Terminal dan Masuk ke Folder Backend**
+    Buka terminal dari direktori utama proyek, lalu masuk ke folder `backend`.
+    ```bash
+    cd backend
+    ```
+
+2.  **Buat dan Aktifkan Virtual Environment**
+    Jika ini pertama kalinya, buat *virtual environment* untuk mengisolasi *dependency*.
+    ```bash
+    # Buat environment (hanya perlu sekali)
+    python -m venv env
+
+    # Aktifkan environment (lakukan setiap kali membuka terminal baru)
+    .\env\Scripts\activate
+    ```
+
+3.  **Install Dependencies**
+    ```bash
+    pip install fastapi "uvicorn[standard]" python-multipart faster-whisper webrtcvad
+    ```
+
+4.  **Jalankan Server Backend**
+    ```bash
+    uvicorn main:app --host 0.0.0.0 --port 8000
+    ```
+
+### 2. Frontend (Flutter) Setup
+
+1.  **Siapkan Emulator atau Perangkat Fisik**
+    Pastikan Android Emulator Anda sudah berjalan.
+
+2.  **Jalankan Aplikasi Flutter**
+    Buka **terminal baru** dari direktori utama proyek (jangan tutup terminal backend). Lalu, jalankan perintah berikut:
+    ```bash
+    flutter run
+    ```
