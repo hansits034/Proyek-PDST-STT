@@ -62,7 +62,6 @@ Video Demo 'sttpdst' (note: gunakan volume suara maksimum dan gunakan headphone/
 
 ### ⚠️ Kendala
 - Dengan model whisper-id Transkrip terkadang cepat, terkadang lambat (sekitar 5-40 detik tergantung kalimat)
--  
 
 ### 🎯 Rencana Minggu Depan
 - Pengembagan aplikasi agar bisa mendapat input dari device/screen/app call.
