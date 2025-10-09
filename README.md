@@ -23,7 +23,7 @@ Setiap minggu mencakup ringkasan pekerjaan, kendala, dan rencana tindak lanjut.
 
 ---
 
-## 🗓️ Minggu 1, Pertemuan 6 (Tanggal: 26 September – 02 Oktober 2025)
+## 🗓️ Progress Minggu 1, Pertemuan 6 (Tanggal: 26 September – 02 Oktober 2025)
 ### ✅ Pekerjaan yang Selesai
 - Set up environtment flutter. (Menggunakan Android)
 - Pembuatan tampilan sederhana dengan voice recording sederhana (pada file 'sttpdst'). [Dustin]
@@ -49,7 +49,7 @@ Link colab: https://colab.research.google.com/drive/1WYVlpPnUyKnk15tvuc6nM61TG8Q
 
 ---
 
-## 🗓️ Minggu 2, Pertemuan 7 (Tanggal: 03–09 Okt 2025)
+## 🗓️ Progress Minggu 2, Pertemuan 7 (Tanggal: 03–09 Okt 2025)
 ### ✅ Pekerjaan yang Selesai
 - Pengimplementasian trankrip real-time speech to text menggunakan model whisper-id (pada file 'sttpdst') [Hans & Dustin]
 - Perubahan Front-End Sederhana untuk Transkrip (pada file 'sttpdst') [Hans & Dustin]
@@ -67,3 +67,15 @@ Video Demo 'sttpdst' (note: gunakan volume suara maksimum dan gunakan headphone/
 ### 🎯 Rencana Minggu Depan
 - Pengembagan aplikasi agar bisa mendapat input dari device/screen/app call.
 - Pembuatan desain Front-End di Figma
+
+---
+
+## 🗓️ Prgress Minggu 3, Pertemuan 8 (Tanggal: 10–16 Okt 2025)
+### ✅ Pekerjaan yang Selesai
+- 
+
+### ⚠️ Kendala
+- 
+
+### 🎯 Rencana Minggu Depan
+- 
