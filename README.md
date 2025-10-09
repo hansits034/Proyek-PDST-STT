@@ -51,10 +51,19 @@ Link colab: https://colab.research.google.com/drive/1WYVlpPnUyKnk15tvuc6nM61TG8Q
 
 ## 🗓️ Minggu 2, Pertemuan 7 (Tanggal: 03–09 Okt 2025)
 ### ✅ Pekerjaan yang Selesai
-- 
+- Pengimplementasian trankrip real-time speech to text menggunakan model whisper-id (pada file 'sttpdst') [Hans & Dustin]
+- Perubahan Front-End Sederhana untuk Transkrip (pada file 'sttpdst') [Hans & Dustin]
+- ()
+- ()
+
+<img width="620" height="1135" alt="Screenshot 2025-10-08 225021" src="https://github.com/user-attachments/assets/099d1aba-1ece-4d65-a9ce-c938bb5cc5c7" />
+Video Demo 'sttpdst' (note: gunakan volume suara maksimum dan gunakan headphone/earphone): (wait)
+
 
 ### ⚠️ Kendala
-- 
+- Dengan model whisper-id Transkrip terkadang cepat, terkadang lambat (sekitar 5-40 detik tergantung kalimat)
+-  
 
 ### 🎯 Rencana Minggu Depan
-- 
+- Pengembagan aplikasi agar bisa mendapat input dari device/screen/app call.
+- Pembuatan desain Front-End di Figma
