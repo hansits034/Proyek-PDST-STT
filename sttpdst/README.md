@@ -114,8 +114,8 @@ samples, guidance on mobile development, and a full API reference.
 
 ### 2. Frontend (Flutter) Setup
 
-1.  **Siapkan Emulator atau Perangkat Fisik**
-    Pastikan Android Emulator Anda sudah berjalan.
+1.  **Pastikan Android Emulator Anda sudah berjalan.**
+    
 
 2.  **Jalankan Aplikasi Flutter**
     Buka **terminal baru** dari direktori utama proyek (jangan tutup terminal backend). Lalu, jalankan perintah berikut:
