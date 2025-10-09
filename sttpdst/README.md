@@ -39,7 +39,27 @@ Video (note: gunakan volume suara maksimal dan gunakan headphone/earphone): http
 
 ---
 
-## 🗓️ Minggu 2, pertemuan 7 (Tanggal: 03–09 Okt 2025)
+## 🗓️ Progress Minggu 2, Pertemuan 7 (Tanggal: 03–09 Okt 2025)
+### ✅ Pekerjaan yang Selesai
+- Pengimplementasian trankrip real-time speech to text menggunakan model whisper-id (pada file 'sttpdst') [Hans & Dustin]
+- Perubahan Front-End Sederhana untuk Transkrip (pada file 'sttpdst') [Hans & Dustin]
+- ()
+- ()
+
+<img width="620" height="1135" alt="Screenshot 2025-10-08 225021" src="https://github.com/user-attachments/assets/099d1aba-1ece-4d65-a9ce-c938bb5cc5c7"/><br>
+Video Demo 'sttpdst' (note: gunakan volume suara maksimum dan gunakan headphone/earphone): https://drive.google.com/file/d/1wZZvKoHQgo3LzCtoDlm2ik6gizlhaco5/view?usp=sharing
+
+
+### ⚠️ Kendala
+- Dengan model whisper-id Transkrip terkadang cepat, terkadang lambat (sekitar 5-40 detik tergantung kalimat)
+
+### 🎯 Rencana Minggu Depan
+- Pengembagan aplikasi agar bisa mendapat input dari device/screen/app call.
+- Pembuatan desain Front-End di Figma
+
+---
+
+## 🗓️ Progress Minggu 3, Pertemuan 8 (Tanggal: 10–16 Okt 2025)
 ### ✅ Pekerjaan yang Selesai
 - 
 
@@ -47,8 +67,9 @@ Video (note: gunakan volume suara maksimal dan gunakan headphone/earphone): http
 - 
 
 ### 🎯 Rencana Minggu Depan
+- 
 
-
+---
 
 <br><br><br>
 ## Penggunaan Flutter (Getting Started)
