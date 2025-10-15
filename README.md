@@ -71,10 +71,11 @@ Video Demo 'sttpdst' (note: gunakan volume suara maksimum dan gunakan headphone/
 
 ## 🗓️ Progress Minggu 3, Pertemuan 8 (Tanggal: 10–16 Okt 2025)
 ### ✅ Pekerjaan yang Selesai
-- 
+- Pengimplementasian Whisper Large Turbo (pada file 'sttpdst/backend/large-turbo.py') [Arka]
+- Penambahan audio frequency pada UI frontend untuk kemudahan debugging (pada file 'sttdpdst/lib/realtime_screen.dart') [Arka]
 
 ### ⚠️ Kendala
-- 
+- Masih terkendala dengan web socket yang harus menstop record untuk menampilkan hasil transkripsi 
 
 ### 🎯 Rencana Minggu Depan
-- 
+- Penerapan diarization serta fix issue web socket
