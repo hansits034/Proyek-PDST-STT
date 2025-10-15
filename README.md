@@ -72,10 +72,14 @@ Video Demo 'sttpdst' (note: gunakan volume suara maksimum dan gunakan headphone/
 ## 🗓️ Progress Minggu 3, Pertemuan 8 (Tanggal: 10–16 Okt 2025)
 ### ✅ Pekerjaan yang Selesai
 - Pengimplementasian Whisper Large Turbo (pada file 'sttpdst/backend/large-turbo.py') [Arka]
-- Penambahan audio frequency pada UI frontend untuk kemudahan debugging (pada file 'sttdpdst/lib/realtime_screen.dart') [Arka]
+- Penambahan audio frequency pada UI frontend untuk kemudahan debugging (pada file 'sttdpdst/lib/realtime_screen.dart') [Arka] 
+
+Link video hasil testing: https://youtu.be/XcwveBUJOhs
 
 ### ⚠️ Kendala
 - Masih terkendala dengan web socket yang harus menstop record untuk menampilkan hasil transkripsi 
+- Waktu yang dibutuhkan untuk mentranskripsi tidak cukup cepat, mungkin karena masih menggunakan GPU laptop, apabila dihost dengan Nvidia L4 GPU mungkin bisa lebih cepat
 
 ### 🎯 Rencana Minggu Depan
 - Penerapan diarization serta fix issue web socket
+- Mencoba hosting VPS dengan GPU sebagai server daripada menggunakan localhost (Google Cloud)
