@@ -72,14 +72,18 @@ Video Demo 'sttpdst' (note: gunakan volume suara maksimum dan gunakan headphone/
 ## 🗓️ Progress Minggu 3, Pertemuan 8 (Tanggal: 10–16 Okt 2025)
 ### ✅ Pekerjaan yang Selesai
 - Pengimplementasian Whisper Large Turbo (pada file 'sttpdst/backend/large-turbo.py') [Arka]
-- Penambahan audio frequency pada UI frontend untuk kemudahan debugging (pada file 'sttdpdst/lib/realtime_screen.dart') [Arka] 
+- Penambahan audio frequency pada UI frontend untuk kemudahan debugging (pada file 'sttdpdst/lib/realtime_screen.dart') [Arka]
+- Pembuatan desain Front-End di Figma. [Hans & Dustin]
 
 Link video hasil testing: https://youtu.be/XcwveBUJOhs
+Link Desain Figma: https://www.figma.com/design/iYsSRfnkKM9KDf9AChoYkL/Resolve---Text-to-Speech--Community-?node-id=2722-536&p=f&t=U4RoH5tUOqUTUFrj-0
 
 ### ⚠️ Kendala
 - Masih terkendala dengan web socket yang harus menstop record untuk menampilkan hasil transkripsi 
 - Waktu yang dibutuhkan untuk mentranskripsi tidak cukup cepat, mungkin karena masih menggunakan GPU laptop, apabila dihost dengan Nvidia L4 GPU mungkin bisa lebih cepat
+- Program aplikasi menjadi lebih kompleks dan lebih sulit untuk diakses.
 
 ### 🎯 Rencana Minggu Depan
 - Penerapan diarization serta fix issue web socket
 - Mencoba hosting VPS dengan GPU sebagai server daripada menggunakan localhost (Google Cloud)
+- Melakukan slicing front-end
