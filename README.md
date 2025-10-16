@@ -73,6 +73,7 @@ Video Demo 'sttpdst' (note: gunakan volume suara maksimum dan gunakan headphone/
 ### ✅ Pekerjaan yang Selesai
 - Pengimplementasian Whisper Large Turbo (pada file 'sttpdst/backend/large-turbo.py') [Arka]
 - Penambahan audio frequency pada UI frontend untuk kemudahan debugging (pada file 'sttdpdst/lib/realtime_screen.dart') [Arka]
+- Research model model lain yang bisa digunakan untuk diarization seperti google cloud speech to text, Pyannote.audio dan whisper large-v3 [Dzaky]
 - Pembuatan desain Front-End di Figma. [Hans & Dustin]
 
 #### Progress App
