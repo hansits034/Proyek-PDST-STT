@@ -94,3 +94,15 @@ Link Desain Figma: https://www.figma.com/design/iYsSRfnkKM9KDf9AChoYkL/Resolve--
 - Penerapan diarization serta fix issue web socket
 - Mencoba hosting VPS dengan GPU sebagai server daripada menggunakan localhost (Google Cloud)
 - Melakukan slicing front-end
+
+---
+
+## 🗓️ Progress Minggu 4, Pertemuan 9 (Tanggal: 17–23 Okt 2025)
+### ✅ Pekerjaan yang Selesai
+- 
+
+### ⚠️ Kendala
+- 
+
+### 🎯 Rencana Minggu Depan
+- 
