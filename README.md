@@ -75,7 +75,7 @@ Video Demo 'sttpdst' (note: gunakan volume suara maksimum dan gunakan headphone/
 - Penambahan audio frequency pada UI frontend untuk kemudahan debugging (pada file 'sttdpdst/lib/realtime_screen.dart') [Arka]
 - Pembuatan desain Front-End di Figma. [Hans & Dustin]
 
-Link video hasil testing: https://youtu.be/XcwveBUJOhs
+Link video hasil testing: https://youtu.be/XcwveBUJOhs <br>
 Link Desain Figma: https://www.figma.com/design/iYsSRfnkKM9KDf9AChoYkL/Resolve---Text-to-Speech--Community-?node-id=2722-536&p=f&t=U4RoH5tUOqUTUFrj-0
 
 ### ⚠️ Kendala
