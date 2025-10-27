@@ -1,5 +1,6 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:web_socket_channel/web_socket_channel.dart';
 import 'package:record/record.dart'; // <-- GANTI DARI mic_stream
 import 'package:permission_handler/permission_handler.dart'; // <-- TAMBAHKAN INI
@@ -37,7 +38,14 @@ class _RealtimeScreenState extends State<RealtimeScreen> {
   bool _awaitingServer = false;
   bool _hasTranscribedText = false;
 
-  final String _serverUrl = 'ws://10.0.2.2:8000/ws';
+  // Get WebSocket URL from environment variable (required)
+  late final String _serverUrl = dotenv.env['WEBSOCKET_URL'] ?? 
+      (throw Exception('WEBSOCKET_URL not found in .env file'));
+  
+  // Add connection state tracking
+  bool _isConnecting = false;
+  int _connectionAttempts = 0;
+  static const int _maxRetries = 3;
 
   @override
   void initState() {
@@ -70,69 +78,178 @@ class _RealtimeScreenState extends State<RealtimeScreen> {
       _ellipsis = '';
       _awaitingServer = true;
       _hasTranscribedText = false;
+      _isConnecting = true;
+      _connectionAttempts = 0;
     });
     _startEllipsisTimer();
 
+    await _attemptConnection();
+  }
+
+  Future<void> _attemptConnection() async {
+    if (_connectionAttempts >= _maxRetries) {
+      _stopEllipsisTimer();
+      setState(() {
+        _status = "Gagal terhubung setelah $_maxRetries percobaan.";
+        _isConnecting = false;
+        _awaitingServer = false;
+        _ellipsis = '';
+      });
+      return;
+    }
+
+    _connectionAttempts++;
+    if (kDebugMode) {
+      print('WebSocket connection attempt $_connectionAttempts/$_maxRetries');
+      print('Connecting to: $_serverUrl');
+    }
+
     try {
-      _channel = WebSocketChannel.connect(Uri.parse(_serverUrl));
+      // Parse and validate URL
+      final uri = Uri.parse(_serverUrl);
+      if (kDebugMode) {
+        print('Parsed URI - scheme: ${uri.scheme}, host: ${uri.host}, path: ${uri.path}');
+      }
+
+      // Create WebSocket connection
+      _channel = WebSocketChannel.connect(
+        uri,
+        protocols: ['websocket'],
+      );
+
+      // Wait for connection with timeout
+      bool connected = false;
+      final connectionFuture = _channel!.ready.then((_) {
+        connected = true;
+        if (kDebugMode) print('WebSocket ready signal received');
+      }).timeout(
+        const Duration(seconds: 10),
+        onTimeout: () {
+          throw TimeoutException('Connection timeout after 10 seconds');
+        },
+      );
+
+      await connectionFuture;
+
+      if (!connected) {
+        throw Exception('Connection ready signal not received');
+      }
+
+      // Connection successful
+      if (kDebugMode) print('WebSocket connected successfully');
+      
       setState(() {
         _status = "Terhubung. Mulai berbicara...";
         _isRecording = true;
-        _awaitingServer = true;
+        _awaitingServer = false;  // Changed: Not waiting for server until we send audio
+        _isConnecting = false;
       });
 
       _listenToMic();
 
+      // Setup message listener
       _channel!.stream.listen(
         (message) {
+          if (kDebugMode) print('Received message: ${message.toString().substring(0, math.min(50, message.toString().length))}...');
           _stopEllipsisTimer();
           final text = (message ?? '').toString().trim();
           if (!mounted) return;
+          
+          // Check if it's an error message
+          if (text.startsWith('ERROR:')) {
+            if (kDebugMode) print('Server error: $text');
+            setState(() {
+              _status = "Server error: ${text.substring(6).trim()}";
+              _awaitingServer = false;
+              _ellipsis = '';
+            });
+            return;
+          }
+          
           setState(() {
             if (text.isNotEmpty) {
               _transcribedText = _transcribedText.isEmpty
                   ? text
                   : "$_transcribedText $text";
               _hasTranscribedText = true;
+              _status = "Transkrip diperbarui.";
             }
-            _status = "Transkrip diperbarui.";
             _awaitingServer = false;
             _ellipsis = '';
           });
+          
+          // Close connection after receiving final transcript (when not recording)
+          if (!_isRecording && _channel != null) {
+            if (kDebugMode) print('Closing connection after receiving transcript');
+            Future.delayed(const Duration(milliseconds: 500), () {
+              _channel?.sink.close();
+              _channel = null;
+            });
+          }
         },
         onDone: () {
+          if (kDebugMode) print('WebSocket closed by server');
           _stopEllipsisTimer();
           setState(() {
             _status = "Koneksi ditutup oleh server.";
             _isRecording = false;
             _awaitingServer = false;
             _ellipsis = '';
+            _isConnecting = false;
           });
         },
         onError: (error) {
-          _stopEllipsisTimer();
-          setState(() {
-            _status = "Error koneksi: $error";
-            _isRecording = false;
-            _awaitingServer = false;
-            _ellipsis = '';
-          });
+          if (kDebugMode) print('WebSocket stream error: $error');
+          _handleConnectionError(error);
         },
+        cancelOnError: true,
       );
-    } catch (e) {
-      _stopEllipsisTimer();
+
+    } catch (e, stackTrace) {
+      if (kDebugMode) {
+        print('Connection error: $e');
+        print('Stack trace: $stackTrace');
+      }
+      _handleConnectionError(e);
+    }
+  }
+
+  void _handleConnectionError(dynamic error) {
+    _stopEllipsisTimer();
+    
+    // Clean up failed connection
+    _channel?.sink.close();
+    _channel = null;
+
+    // Retry or give up
+    if (_connectionAttempts < _maxRetries) {
       setState(() {
-        _status = "Gagal terhubung ke server: $e";
+        _status = "Percobaan $_connectionAttempts gagal, mencoba lagi...";
+      });
+      _startEllipsisTimer();
+      
+      // Retry after delay
+      Future.delayed(const Duration(seconds: 2), () {
+        if (_isConnecting && mounted) {
+          _attemptConnection();
+        }
+      });
+    } else {
+      setState(() {
+        _status = "Gagal terhubung: ${error.toString()}";
         _isRecording = false;
         _awaitingServer = false;
         _ellipsis = '';
+        _isConnecting = false;
       });
     }
   }
 
   void _stopListening() async {
-    if (!_isRecording) return;
+    if (!_isRecording && !_isConnecting) return;
 
+    _isConnecting = false;
+    
     await _micSubscription?.cancel();
     _micSubscription = null;
 
@@ -142,20 +259,49 @@ class _RealtimeScreenState extends State<RealtimeScreen> {
 
     // Request server to transcribe any remaining buffer
     try {
-      _channel?.sink.add('STOP');
-    } catch (_) {}
-    await Future.delayed(const Duration(milliseconds: 50));
-    _channel?.sink.close();
-    _channel = null;
-
-    setState(() {
-      _status = "Koneksi dihentikan.";
-      _isRecording = false;
-      _voiceDetected = false;
-      _awaitingServer = false;
-      _ellipsis = '';
-    });
-    _stopEllipsisTimer();
+      if (_channel != null) {
+        if (kDebugMode) print('Sending STOP command');
+        setState(() {
+          _status = "Menunggu transkrip final...";
+          _awaitingServer = true;
+          _isRecording = false;
+          _voiceDetected = false;
+        });
+        _startEllipsisTimer();
+        
+        _channel?.sink.add('STOP');
+        
+        // Don't close immediately - let the stream listener handle the response
+        // Set a timeout to close if no response after 30 seconds
+        Future.delayed(const Duration(seconds: 30), () {
+          if (_channel != null && _awaitingServer) {
+            if (kDebugMode) print('Transcript timeout - closing connection');
+            _channel?.sink.close();
+            _channel = null;
+            
+            if (mounted) {
+              setState(() {
+                _status = "Timeout menunggu transkrip.";
+                _awaitingServer = false;
+                _ellipsis = '';
+              });
+              _stopEllipsisTimer();
+            }
+          }
+        });
+      }
+    } catch (e) {
+      if (kDebugMode) print('Error sending STOP: $e');
+      setState(() {
+        _status = "Error: $e";
+        _isRecording = false;
+        _voiceDetected = false;
+        _awaitingServer = false;
+        _ellipsis = '';
+      });
+      _stopEllipsisTimer();
+    }
+    
     _waveform.clear();
     _spectrumLevels.fillRange(0, _spectrumLevels.length, 0.0);
   }
