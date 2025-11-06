@@ -23,7 +23,7 @@ Setiap minggu mencakup ringkasan pekerjaan, kendala, dan rencana tindak lanjut.
 
 ---
 
-## 🗓️ Progress Minggu 1, Pertemuan 6 (Tanggal: 26 September – 02 Oktober 2025)
+## 🗓️ Progress Minggu 1, Pertemuan 6 (Tanggal: 26 September 2025 – 02 Oktober 2025)
 ### ✅ Pekerjaan yang Selesai
 - Set up environtment flutter. (Menggunakan Android)
 - Pembuatan tampilan sederhana dengan voice recording sederhana (pada file 'sttpdst'). [Dustin]
@@ -33,7 +33,7 @@ Setiap minggu mencakup ringkasan pekerjaan, kendala, dan rencana tindak lanjut.
 <img width="1188" height="1273" alt="Screenshot 2025-10-02 102928" src="https://github.com/user-attachments/assets/cdf3f3a0-4e5e-40fd-b67e-44d5af3b89e1" />
 
 Video Demo 'sttpdst' (note: gunakan volume suara maksimum dan gunakan headphone/earphone): https://drive.google.com/file/d/1-Vq-0RmV0uKH6lTE-_EyRaKOpBV9nnYr/view?usp=sharing
-
+Akses File Drive : https://drive.google.com/file/d/17ViE16o49GrZq08MBh2ZUMUDqRnpM5GA/view?usp=sharing
 Link colab: https://colab.research.google.com/drive/1WYVlpPnUyKnk15tvuc6nM61TG8Q_sM1r?usp=sharing
 
 ### ⚠️ Kendala
@@ -58,7 +58,7 @@ Link colab: https://colab.research.google.com/drive/1WYVlpPnUyKnk15tvuc6nM61TG8Q
 
 <img width="620" height="1135" alt="Screenshot 2025-10-08 225021" src="https://github.com/user-attachments/assets/099d1aba-1ece-4d65-a9ce-c938bb5cc5c7"/><br>
 Video Demo 'sttpdst' (note: gunakan volume suara maksimum dan gunakan headphone/earphone): https://drive.google.com/file/d/1wZZvKoHQgo3LzCtoDlm2ik6gizlhaco5/view?usp=sharing
-
+Drive File Drive : https://drive.google.com/file/d/1BgR-6JH1wv6dESRXHIzB8wiR7sf7DjcO/view?usp=sharing
 
 ### ⚠️ Kendala
 - Dengan model whisper-id Transkrip terkadang cepat, terkadang lambat (sekitar 5-40 detik tergantung kalimat)
@@ -99,6 +99,26 @@ Link Desain Figma: https://www.figma.com/design/iYsSRfnkKM9KDf9AChoYkL/Resolve--
 ---
 
 ## 🗓️ Progress Minggu 4, Pertemuan 9 (Tanggal: 17–23 Okt 2025)
+### ✅ Pekerjaan yang Selesai
+- Uji Coba Deployment
+
+### ⚠️ Kendala
+- Server tak sanggup untuk banyak client
+
+### 🎯 Rencana Minggu Depan
+- Pembuatan metodologi
+
+## 🗓️ Progress Minggu 5, Pertemuan 10 (Tanggal: 24–30 Okt 2025)
+### ✅ Pekerjaan yang Selesai
+- Pembuatan Metodologi
+
+### ⚠️ Kendala
+- Pembagian Metodologi
+
+### 🎯 Rencana Minggu Depan
+- Pengerjaan Tiap Metodologi
+
+## 🗓️ Progress Minggu 6, Pertemuan 11 (Tanggal: 31 Okt 2025 – 6 Nov 2025)
 ### ✅ Pekerjaan yang Selesai
 - 
 
