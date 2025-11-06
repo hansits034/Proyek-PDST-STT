@@ -129,6 +129,8 @@ Link Akses Diagram Metodologi: https://miro.com/welcomeonboard/QSsvKzQ3LytkVmhkM
 - Percobaan Penggunaan Model aTrain [Dzaky]
 - Pengintegrasian Pyannote dengan Whisper Turbo [Arka]
 - Percobaan Diarization NVIDIA NeMO di Jupyter Notebook, masih belum diimplementasikan ke mobile app, hanya bisa kirim suara dan response [Arka]
+- <img width="1916" height="1019" alt="Screenshot 2025-11-06 163254" src="https://github.com/user-attachments/assets/089581de-ee83-46af-a3a9-a24cab3134e1" />
+
 
 ### ⚠️ Kendala
 - Hasil dari pyannote masih kurang baik dibandingkan aplikasi meeting recorder
