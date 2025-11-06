@@ -106,17 +106,22 @@ Link Desain Figma: https://www.figma.com/design/iYsSRfnkKM9KDf9AChoYkL/Resolve--
 - Server tak sanggup untuk banyak client
 
 ### 🎯 Rencana Minggu Depan
-- Pembuatan metodologi
+- Pembuatan Diagram Metodologi
+
+---
 
 ## 🗓️ Progress Minggu 5, Pertemuan 10 (Tanggal: 24–30 Okt 2025)
 ### ✅ Pekerjaan yang Selesai
-- Pembuatan Metodologi
+- Pembuatan Diagram Metodologi
+Link Akses Diagram Metodologi: https://miro.com/welcomeonboard/QSsvKzQ3LytkVmhkMXg5amJaVFpYbjVjSmJoa0xWVDBmMFBvaWQ1SVV3YzM5SFNyQVFiVnBidGh0bGxKbGpTS3pqL3VrRUlnNktNaUtwdzJDK29YdHJpQ2JieXpXd04yZ01Td0lZei9ueWlWUGJyTGFBb3dmRjZXVkRrbUJFbnpQdGo1ZEV3bUdPQWRZUHQzSGl6V2NBPT0hdjE=?share_link_id=232735754704
 
 ### ⚠️ Kendala
 - Pembagian Metodologi
 
 ### 🎯 Rencana Minggu Depan
 - Pengerjaan Tiap Metodologi
+
+---
 
 ## 🗓️ Progress Minggu 6, Pertemuan 11 (Tanggal: 31 Okt 2025 – 6 Nov 2025)
 ### ✅ Pekerjaan yang Selesai
@@ -127,3 +132,5 @@ Link Desain Figma: https://www.figma.com/design/iYsSRfnkKM9KDf9AChoYkL/Resolve--
 
 ### 🎯 Rencana Minggu Depan
 - 
+
+---
