@@ -134,3 +134,63 @@ Link Akses Diagram Metodologi: https://miro.com/welcomeonboard/QSsvKzQ3LytkVmhkM
 - 
 
 ---
+
+## 🗓️ Progress Minggu 7, Pertemuan 12 (Tanggal: 7 – 13 Nov 2025)
+### ✅ Pekerjaan yang Selesai
+- 
+
+### ⚠️ Kendala
+- 
+
+### 🎯 Rencana Minggu Depan
+- 
+
+---
+
+## 🗓️ Progress Minggu 8, Pertemuan 13 (Tanggal: 14 – 20 Nov 2025)
+### ✅ Pekerjaan yang Selesai
+- 
+
+### ⚠️ Kendala
+- 
+
+### 🎯 Rencana Minggu Depan
+- 
+
+---
+
+## 🗓️ Progress Minggu 9, Pertemuan 14 (Tanggal: 21 – 27 Nov 2025)
+### ✅ Pekerjaan yang Selesai
+- 
+
+### ⚠️ Kendala
+- 
+
+### 🎯 Rencana Minggu Depan
+- 
+
+---
+
+## 🗓️ Progress Minggu 10, Pertemuan 15 (Tanggal: 28 Nov 2025 – 4 Dec 2025)
+### ✅ Pekerjaan yang Selesai
+- 
+
+### ⚠️ Kendala
+- 
+
+### 🎯 Rencana Minggu Depan
+- 
+
+---
+
+## 🗓️ Progress Minggu 11, Pertemuan 16 (Tanggal: 5 – 11 Dec 2025)
+### ✅ Pekerjaan yang Selesai
+- 
+
+### ⚠️ Kendala
+- 
+
+### 🎯 Rencana Minggu Depan
+- 
+
+---
