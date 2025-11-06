@@ -126,9 +126,13 @@ Link Akses Diagram Metodologi: https://miro.com/welcomeonboard/QSsvKzQ3LytkVmhkM
 ## 🗓️ Progress Minggu 6, Pertemuan 11 (Tanggal: 31 Okt 2025 – 6 Nov 2025)
 ### ✅ Pekerjaan yang Selesai
 - Pembuatan Generate Berita Acara dan Kronologi dengan menguji berbagai API
+- Percobaan Penggunaan Model aTrain [Dzaky]
+- Pengintegrasian Pyannote dengan Whisper Turbo [Arka]
+- Percobaan Diarization NVIDIA NeMO di Jupyter Notebook, masih belum diimplementasikan ke mobile app, hanya bisa kirim suara dan response [Arka]
 
 ### ⚠️ Kendala
-- 
+- Hasil dari pyannote masih kurang baik dibandingkan aplikasi meeting recorder
+- Masih terkendala penerapan NVIDIA NeMo dependencies serta venv untuk aplikasi backend
 
 ### 🎯 Rencana Minggu Depan
 - 
