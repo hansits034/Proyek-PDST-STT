@@ -132,6 +132,7 @@ Link Akses Diagram Metodologi: https://miro.com/welcomeonboard/QSsvKzQ3LytkVmhkM
 
 ### ⚠️ Kendala
 - Hasil dari pyannote masih kurang baik dibandingkan aplikasi meeting recorder
+- Hasil dari model aTrain untuk diaeization masih kurang baik
 - Masih terkendala penerapan NVIDIA NeMo dependencies serta venv untuk aplikasi backend
 
 ### 🎯 Rencana Minggu Depan
