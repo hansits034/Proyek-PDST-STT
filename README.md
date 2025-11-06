@@ -125,7 +125,7 @@ Link Akses Diagram Metodologi: https://miro.com/welcomeonboard/QSsvKzQ3LytkVmhkM
 
 ## 🗓️ Progress Minggu 6, Pertemuan 11 (Tanggal: 31 Okt 2025 – 6 Nov 2025)
 ### ✅ Pekerjaan yang Selesai
-- 
+- Pembuatan Generate Berita Acara dan Kronologi dengan menguji berbagai API
 
 ### ⚠️ Kendala
 - 
